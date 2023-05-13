@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutUpdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4A159"
+    android:orientation="vertical"
+    tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_tieude_update"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="5dp">
+
+            <EditText
+
+                android:id="@+id/edit_title_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4A9F1"
+                android:ems="10"
+                android:hint="Tiêu đề"
+                android:maxLength="30"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#03A9F4"
+                android:textColorHint="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/checkpassword_update"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:layout_margin="12dp"
+                app:srcCompat="@drawable/greennot" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chonmau_update"
+        android:layout_below="@id/layout_tieude_update"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/dotred"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotred" />
+
+        <ImageView
+            android:id="@+id/dotongrane"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotorange" />
+
+        <ImageView
+            android:id="@+id/dotyellow"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotyellow" />
+
+        <ImageView
+            android:id="@+id/dotgreen"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotgreen" />
+
+        <ImageView
+            android:id="@+id/dotblue"
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotblue" />
+
+        <ImageView
+            android:id="@+id/dotviolet"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotviolet" />
+
+        <ImageView
+            android:id="@+id/dotpink"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg"
+            app:srcCompat="@drawable/dotpink" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chonmau_update"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="19dp"
+            app:cardElevation="5dp">
+
+            <EditText
+
+                android:id="@+id/edit_description_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoLink="web"
+                android:background="#F4A9F1"
+                android:clickable="true"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Nội dung"
+                android:inputType="textMultiLine"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="#03A9F4"
+                android:textColorHint="@color/white"
+                android:textSize="20dp"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_voice_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="208dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_keyboard_voice_24"
+        app:tint="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_share_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="145dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/shareicon"
+        app:tint="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_save_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_save_24"
+        app:tint="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_copy_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="83dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_content_copy_24"
+        app:tint="#FFFFFF"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>

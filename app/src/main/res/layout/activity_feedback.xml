@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".Feedback">
+
+    <LinearLayout
+        android:id="@+id/vungphanhoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="12dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            app:srcCompat="@drawable/feedback" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/phanhoi"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="6dp"
+            android:elevation="35dp"
+            app:cardBackgroundColor="#EAE6E6"
+            app:cardCornerRadius="18dp">
+
+            <EditText
+                android:id="@+id/edit_messsg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Nhập phản hồi của bạn nhé !"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_sent"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="GỬI"
+            app:icon="@drawable/ic_baseline_send_24" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
