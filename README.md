@@ -1,4 +1,5 @@
 # Note-AG
+The application features a simple and beautiful interface that is easy to use and includes basic functions such as adding, deleting, and editing notes. Additionally, there is a note encryption function to protect the content within the notes. Please download and use, and if you find the application useful, please give me a five-star rating on Google Play!
 ## Download
 
 <a href="https://play.google.com/store/apps/details?id=com.note.noteapp&pli=1" target="_blank">
